@@ -1,2 +1,2 @@
-#AZ Course on Writing Smart Contracts 
+# AZ Course on Writing Smart Contracts 
 
