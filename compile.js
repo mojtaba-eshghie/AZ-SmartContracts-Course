@@ -26,12 +26,12 @@ var input = {
 
 
 let output = JSON.parse(solc.compile(JSON.stringify(input)))
-
+/*
 for (var contractName in output.contracts['Inbox.sol']) {
     
     console.log(
         output.contracts['Inbox.sol'][contractName].evm.bytecode.object
     );
   }
-
+*/
 module.exports = output.contracts['Inbox.sol']
