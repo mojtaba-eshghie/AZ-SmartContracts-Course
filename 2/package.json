@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "test": "mocha"
+    },
+    "dependencies": {
+        "ganache-cli": "^6.9.1",
+        "mocha": "^8.0.1",
+        "solc": "^0.6.12",
+        "truffle": "^5.1.36",
+        "web3": "^1.2.11"
+    }
+}

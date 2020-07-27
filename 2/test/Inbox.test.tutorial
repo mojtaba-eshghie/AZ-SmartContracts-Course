@@ -1,0 +1,42 @@
+const assert = require('assert')
+const ganache = require('ganache-cli')
+
+// Web3 is a constructor function, so, it is uppercased
+const Web3 = require('web3')
+ 
+
+// This one is an instance of Web3 
+const web3 = new Web3(ganache.provider())
+
+
+class Car {
+    park() {
+        return 'stopped.'
+    }
+
+    drive() {
+        return 'vroooooom!'
+    }
+}
+
+
+// do this so that the car instance variable is available inside all of arrow
+// functions related to tests
+let car; 
+
+describe('Car Class Tests', () => {
+    beforeEach(() => {
+        car = new Car()
+    })
+
+    
+
+    it('park should return string \'stopped.\'', () => {
+        assert.equal(car.park(), 'stopped.')
+    })
+
+    it('drive should return \'vroooooom!\'', () => {
+        assert.equal(car.drive(), 'vroooooom!')
+    })
+
+})
