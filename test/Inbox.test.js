@@ -1,20 +1,13 @@
 const assert = require('assert')
 const ganache = require('ganache-cli')
 
-// Web3 is a constructor function, so, it is uppercased
 const Web3 = require('web3')
 
 const contract_output = require(`../compile`)
 const {abi, evm} = contract_output['Inbox']
 const bytecode = evm["bytecode"]
 
-//console.log(abi)
-//console.log("===========================================================")
-//console.log(bytecode)
 
- 
-
-// This one is an instance of Web3 
 const web3 = new Web3(ganache.provider())
 
 
